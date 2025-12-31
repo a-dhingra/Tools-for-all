@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}MP4 to MP3 Converter{% endblock %}
+
+{% block content %}
+<h2>MP4 to MP3 Converter</h2>
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="file" class="form-label">Select MP4 File</label>
+        <input type="file" class="form-control" id="file" name="file" accept=".mp4" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Convert</button>
+</form>
+{% endblock %}

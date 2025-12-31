@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}YouTube Audio Downloader{% endblock %}
+
+{% block content %}
+<h2>YouTube Audio Downloader</h2>
+<form method="post">
+    <div class="mb-3">
+        <label for="url" class="form-label">YouTube URL</label>
+        <input type="text" class="form-control" id="url" name="url" placeholder="https://www.youtube.com/watch?v=..." required>
+    </div>
+    <button type="submit" class="btn btn-primary">Download</button>
+</form>
+{% endblock %}
